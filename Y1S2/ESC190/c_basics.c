@@ -30,6 +30,9 @@ int main() {
    int *p_i = &i;//Pointer to address of variable (&variable)
    *p_i = 2; //Pointer accesses value of variable (*pointer)
 
+   char *string = "asdf"; //Defines unmodifiable char array
+   char string2[] = "asdf"; //Defines modifiable char array
+
 // Structures
    struct point p;
    p.x=1;
