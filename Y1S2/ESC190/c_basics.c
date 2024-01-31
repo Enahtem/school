@@ -57,4 +57,8 @@ int main() {
    }
    printf("Twelfth new element: %d", arr2[12]);
    free(arr2);//Free memory
+
+
+// Memory Management with Structures
+// (*struct).thing equivalent to struct->thing
 }
