@@ -97,20 +97,20 @@ int main(){
     set_int2(&num);
     printf("%d\n", num);
     // Question 2
-    student1 *student = (student1 *) malloc(sizeof(student1));
-    strcpy(student->name, "Hector Chen");
-    strcpy(student->student_number, "1010080500");
-    student->year=2027;
-    print_info(student);
+    student1 student;
+    strcpy(student.name, "Hector Chen");
+    strcpy(student.student_number, "1010080500");
+    student.year=2027;
+    print_info(&student);
     // Question 3
     // Passing the structure directly copies it.
-    set_default_name(student);
-    print_info(student);
+    set_default_name(&student);
+    print_info(&student);
     // Question 4
     student1 *studentgroup;
     int num_students=5;
     create_block1(&studentgroup, num_students);
-    studentgroup[3]=*student;
+    studentgroup[3]=student;
     print_info(&studentgroup[3]);
     // Question 5
     char *new_name = "Changed Name";
@@ -118,7 +118,6 @@ int main(){
     print_info(&studentgroup[3]);
     // Question 6
     destroy_block1(&studentgroup);
-    free(student);
     // Question 7
     student2 *studentgroup2;
     int num_students2=3;
