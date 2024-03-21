@@ -50,37 +50,37 @@ void destroyQueue(CircularQueue *q) {
     free(q);
 }
 
-
 int main() {
-    CircularQueue q;
-    initialize(&q, 5);
-    enqueue(&q, 1);
-    print(&q);
-    enqueue(&q, 1);
-    print(&q);
-    enqueue(&q, 1);
-    print(&q);
-    dequeue(&q);
-    print(&q);
-    dequeue(&q);
-    print(&q);
-    enqueue(&q, 1);
-    print(&q);
-    enqueue(&q, 1);
-    print(&q);
-    enqueue(&q, 1);
-    print(&q);
-    enqueue(&q, 1);
-    print(&q);
-    enqueue(&q, 1);
-    print(&q);
-    dequeue(&q);
-    print(&q);
-    dequeue(&q);
-    print(&q);
-    dequeue(&q);
-    print(&q);
-    dequeue(&q);
-    print(&q);
+    CircularQueue *q = malloc(sizeof(CircularQueue));
+    initialize(q, 5);
+    enqueue(q, 1);
+    print(q);
+    enqueue(q, 1);
+    print(q);
+    enqueue(q, 1);
+    print(q);
+    dequeue(q);
+    print(q);
+    dequeue(q);
+    print(q);
+    enqueue(q, 1);
+    print(q);
+    enqueue(q, 1);
+    print(q);
+    enqueue(q, 1);
+    print(q);
+    enqueue(q, 1);
+    print(q);
+    enqueue(q, 1);
+    print(q);
+    dequeue(q);
+    print(q);
+    dequeue(q);
+    print(q);
+    dequeue(q);
+    print(q);
+    dequeue(q);
+    print(q);
+    destroyQueue(q);
     return 0;
 }
