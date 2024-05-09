@@ -1,0 +1,2 @@
+how do i use fopen and fclose and whatnot?
+ok, but how do i do new lines?
